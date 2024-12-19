@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(../image/backGroudImg/1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    scrollbar-color: #2a677c hsl(40, 27%, 98%);
+}
+
+header {
+    margin-top: 2vw;
+}
+
+.closeBtnNone {
+    display: none;
+}
+
+#dropdownContent {
+    margin-top: 1vw;
+    line-height: 150%;
+    padding: 0.8vw;
+    width: 10vw;
+    border-radius: 0.5vw;
+    border: #2a677c solid 1px;
+    position: absolute;
+    background-color: #ffffff;
+    color: #2a677c;
+}
+
+#dropdownContent p {
+    border-bottom: #2a677c 1px solid;
+}
+
+.dropdownContent {
+    display: none;
+}
+
+img {
+    width: auto;
+    height: 15vw;
+    display: flex;
+    justify-content: center;
+}
+
+.ring {
+    position: relative;
+    width: 37vw;
+    height: 37vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ring {
+    margin-top: 12vw;
+    background-color: hsl(195, 49%, 33%, 0.7);
+    border-radius: 10%;
+    width: 80vw;
+    height: 40vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.getIn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 5vw;
+}
+
+.getIn h2 {
+    font-size: 3vw;
+    color: #ffffff;
+}
+
+.getIn .inputBx {
+    position: relative;
+}
+
+.getIn .inputBx input {
+    text-align: center;
+    position: relative;
+    width: 20vw;
+    height: 42px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 40px;
+    font-size: 1.2em;
+    color: #ffffff;
+    box-shadow: none;
+    outline: none;
+}
+
+.getIn .inputBx input[type="submit"] {
+    width: 10vw;
+    height: 30px;
+    background: linear-gradient(65deg, #ffffff, #2a677c);
+    border: #2a677c solid 1px;
+    cursor: pointer;
+}
+
+.getIn .inputBx input::placeholder {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.getIn .links {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.getIn a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+
+.goIn p {
+    display: inline;
+    color: white;
+}
+
+#Messages {
+    margin-bottom: 1vw;
+    justify-content: center;
+    display: flex;
+}
+
+#Messages h1 {
+    font-family: "poppins", sans-serif;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+    line-height: 1.0385;
+    color: white;
+    margin-top: 2vw;
+    justify-content: center;
+    display: flex;
+    font-size: 4vw;
+}
+
+#controlMessage {
+    margin-top: 1.5vw;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+
+#get,
+#send,
+#sent {
+    background-color: rgba(72, 72, 72, 0.5);
+    border-radius: 0.3em;
+    text-align: center;
+}
+
+#goToGetBoard,
+#goToSentBoard {
+    height: 2vw;
+}
+
+
+
+#get h1,
+#sent h1,
+#send h1 {
+    margin-top: 1vw;
+    color: white;
+}
+
+#get,
+#sent {
+    overflow-y: auto;
+    height: 30vw;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+#send {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vw;
+    width: 25vw;
+}
+
+#subject,
+#addressee {
+    padding-right: 1.5vw;
+    margin-top: 0.8vw;
+    width: 17vw;
+    height: 2vw;
+    border: none;
+}
+
+#message {
+    border: none;
+    padding-right: 1.5vw;
+    margin-top: 0.8vw;
+    width: 17vw;
+    height: 15vw;
+}
+
+#message:focus,
+#addressee:focus,
+#subject:focus {
+    border: 3px solid #2a677c;
+    outline: none;
+}
+
+.send {
+    width: 14.5vw;
+    height: 2vw;
+    background-color: #2a677c;
+    color: white;
+    outline: none;
+    border: 3px solid white;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.getMessage,
+.sentMessage {
+    background-color: rgb(255, 255, 255);
+    overflow-y: auto;
+    margin-top: 0.5vw;
+    width: 40vw;
+    height: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1vw;
+}
+
+.sentMessage:hover,
+.getMessage:hover {
+    border: 3px solid #2a677c;
+}
+
+#goToSentBoard:hover,
+#goToGetBoard:hover {
+    border: 1.5px solid #2a677c;
+
+}
+
+.getMessage p {
+    width: 38vw;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+    font-size: 1vw;
+    line-height: 150%;
+}
+
+#logOut input {
+    display: ruby-text;
+    margin-top: 2vw;
+    width: 3vw;
+    height: 1.5vw;
+}
+
+#sendAnim {
+    margin-right: 4vw;
+    margin-top: 0.2vw;
+    width: 17vw;
+    display: flex;
+    gap: 0.5vw;
+    justify-content: center;
+}
+
+#sendAnim .envelopeAnim {
+    animation: moveEnve 2s linear;
+    position: absolute;
+    margin-right: 18vw;
+}
+
+#send i {
+    font-size: 2.3vw;
+    color: #2a677c;
+}
+
+#server {
+    display: flex;
+    justify-content: space-between;
+}
+
+#server i {
+    font-size: 4vw;
+    color: white;
+}
+
+#server i:hover {
+    color: #2a677c;
+}
+
+#server .driveAnim1 {
+    position: absolute;
+    margin-right: 67vw;
+    color: white;
+}
+
+#server .driveAnim {
+    position: absolute;
+    animation: move 4s linear;
+    margin-left: 6vw;
+}
+
+#server .driveAnim i {
+    color: #2a677c;
+}
+
+@keyframes move {
+    0% {
+        left: -5vw;
+        color: #ffffff;
+    }
+
+    90% {
+        left: 51vw;
+        color: #2a677c;
+    }
+
+    100% {
+        left: 51vw;
+        color: #2a677c;
+    }
+}
+
+@keyframes moveEnve {
+    0% {
+        bottom: 10vw;
+        left: 14vw;
+    }
+
+    75% {
+        bottom: 2.5vw;
+        left: 12vw;
+    }
+
+    100% {
+        bottom: 2.5vw;
+        left: 16vw;
+
+    }
+}

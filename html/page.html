@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail</title>
+    <link rel="stylesheet" href="../css/page.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/fontawesome.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/solid.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/brands.css">
+</head>
+
+<main>
+
+</main>
+
+<template id="login">
+    <div class="ring">
+        <div id=ring>
+            <div class="getIn">
+                <h2>התחברות</h2>
+
+                <div class="inputBx">
+                    <input id="userName" type="text" placeholder="שם משתמש">
+                </div>
+                <div class="inputBx">
+                    <input id="userEmail" type="email" placeholder="מייל">
+                </div>
+                <div class="inputBx">
+                    <input id="pwd" type="password" placeholder="סיסמא">
+                </div>
+                <div class="inputBx" id="sendValueLogIn">
+                    <input id="loginLink" type="submit" value="התחבר">
+                </div>
+                <div class="goIn">
+                    <p> אין לך חשבון </p>
+                    <button id="registerLink" href="#">לחץ כאן</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template id="registration">
+    <div class="ring">
+        <div id=ring>
+            <div class="getIn">
+                <h2>הרשמה</h2>
+                <div class="inputBx">
+                    <input id="userName" type="text" placeholder="שם משתמש">
+                </div>
+                <div class="inputBx">
+                    <input id="userEmail" type="email" placeholder="מייל">
+                </div>
+                <div class="inputBx">
+                    <input id="pwd" type="password" placeholder="סיסמא">
+                </div>
+                <div class="inputBx" id="sendValueSignUp">
+                    <input id="signUpLink" type="submit" value="הירשם">
+                </div>
+                <div class="goIn">
+                    <p> יש לך חשבון</p>
+                    <button id="logInLink" href="#">לחץ כאן</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+
+<template id="gmail">
+    <header>
+        <input type="button" value="יציאה" id="logOut">
+        <input type="button" value="אנשי קשר" id="dropdownContentBtn">
+        <input type="button" value=" סגור" class="closeBtnNone" id="onClickClose">
+        <div id="dropdownContent" class="dropdownContent">
+        </div>
+    </header>
+
+    <div id="Messages">
+        <h1>Messages</h1>
+    </div>
+
+    <div id="controlMessage">
+        <audio src="../audio/SmallGlockE.wav" id="correctAudio"></audio>
+        <div id="msgControl">
+        </div>
+        <template id="getBoard">
+
+            <div id="get">
+                <div id="titel">
+                    <h1>הודעות שהתקבלו</h1>
+                    <button id="goToSentBoard" href="#"> הודעות שנשלחו</button>
+                    <button id="goToGetBoard" href="#">הודעות שהתקבלו</button>
+                </div>
+                <div id="getMessage"></div>
+            </div>
+
+        </template>
+        <template id="sentBoard">
+            <div id="sent">
+                <div id="titel">
+                    <h1>הודעות שנשלחו</h1>
+                    <button id="goToSentBoard" href="#"> הודעות שנשלחו</button>
+                    <button id="goToGetBoard" href="#">הודעות שהתקבלו</button>
+                </div>
+                <div id="sentMessage"></div>
+            </div>
+
+        </template>
+
+        <div id="send">
+            <h1>לשליחת הודעה</h1>
+            <form>
+                <input type="text" id="addressee" placeholder="מייל">
+                <input type="text" id="subject" placeholder="נושא">
+                <textarea type="text" id="message" placeholder="תוכן ההודעה"></textarea>
+                <div id="sendAnim">
+                    <input type="submit" href="#" class="send" value="שלח">
+                    <i class="fa-solid fa-envelope" id="sendAnimEnve"></i>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="server">
+        <i class="fa-solid fa-user"></i>
+        <div class="driveAnim1">
+            <i class="fa-solid fa-truck-fast" id="sendAnimTruck"></i>
+        </div>
+        <i class="fa-solid fa-box"></i>
+    </div>
+
+</template>
+
+<script src="../js/cable.js"></script>
+<script src="../js/client.js"></script>
+<script src="../js/packege.js"></script>
+<script src="../js/server.js"></script>
+<script src="../js/page.js"></script>
+
+</html>
